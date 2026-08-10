@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-body: "Manrope", sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: clip;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+
+  overflow-x: clip;
+
+  background: #ffefb3;
+  color: #013e37;
+
+  font-family: "Manrope", sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* =========================
+   ABOUT 3D TITLE
+========================= */
+
+.about-title-perspective {
+  perspective: 900px;
+}
+
+.about-title-3d {
+  display: inline-block;
+
+  color: #ffefb3;
+
+  transform-origin: bottom center;
+  transform: rotateX(10deg);
+
+  text-shadow:
+    0 1px 0 #01352f,
+    0 2px 0 #012f2a,
+    0 3px 0 #002b27,
+    0 4px 0 #002722,
+    0 5px 0 #00231f,
+    0 6px 0 #001f1c,
+    0 7px 0 #001b18,
+    0 11px 18px rgba(0, 0, 0, 0.22);
+}
+
+/* =========================
+   PROJECTS TITLE
+========================= */
+
+.projects-title {
+  position: relative;
+  display: inline-block;
+  isolation: isolate;
+}
+
+.projects-title::before,
+.projects-title::after {
+  content: attr(data-text);
+
+  position: absolute;
+  inset: 0;
+
+  color: transparent;
+
+  -webkit-text-stroke: 1px rgba(255, 239, 179, 0.3);
+
+  pointer-events: none;
+  z-index: -1;
+}
+
+.projects-title::before {
+  transform: translate(8px, 8px);
+}
+
+.projects-title::after {
+  transform: translate(16px, 16px);
+  opacity: 0.45;
+}
+
+@media (min-width: 640px) {
+  .projects-title::before {
+    transform: translate(10px, 10px);
+  }
+
+  .projects-title::after {
+    transform: translate(20px, 20px);
+  }
+}
+
+/* =========================
+   CONTACT TITLE
+========================= */
+
+.contact-outline-title {
+  color: transparent;
+
+  -webkit-text-stroke: 2px #013e37;
+
+  transition:
+    color 500ms ease,
+    transform 500ms ease;
+}
+
+.contact-section:hover .contact-outline-title {
+  color: #013e37;
+  transform: translateX(0.02em);
+}
