@@ -386,7 +386,7 @@ export default function Projects() {
                   </div>
 
                   {/* Image */}
-                  <div className="overflow-hidden bg-[#ffefb3]">
+                  <div className="overflow-hidden">
                     {project.image ? (
                       <a
                         href={
@@ -402,20 +402,13 @@ export default function Projects() {
                         rel="noreferrer"
                         className="block"
                       >
-                        <img
-                          src={project.image}
-                          alt={`${project.title} preview`}
-                          className="
-                            aspect-[16/10]
-                            h-full
-                            w-full
-                            object-cover
-                            transition-transform
-                            duration-700
-                            ease-out
-                            group-hover:scale-[1.025]
-                          "
-                        />
+                        <div className="aspect-video overflow-hidden rounded-xl bg-[#013e37] p-4">
+                          <img
+                            src={project.image}
+                            alt={`${project.title} preview`}
+                            className="h-full w-full object-contain"
+                          />
+                        </div>
                       </a>
                     ) : (
                       <div

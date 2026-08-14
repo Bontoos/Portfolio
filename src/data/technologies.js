@@ -9,6 +9,6 @@ const skills = [
   },
   {
     title: "Tools",
-    items: ["Git", "GitHub", "REST APIs"],
+    items: ["Git", "GitHub", "REST APIs", "Tauri"],
   },
 ];

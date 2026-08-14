@@ -2,20 +2,16 @@ export const projects = [
   {
     id: 1,
 
-    title: "Project Name",
+    title: "NollKeys",
 
-    type: "Web Application",
+    type: "",
 
     description:
-      "What the project is, what it does, and one thing about it that made it interesting to build.",
+      "A beginner-friendly desktop configuration panel for NollKeys keyboards. Users can customize layouts, create macros, and configure key combinations through a simple interface while retaining powerful options for advanced setups.",
 
-    technologies: [
-      "React",
-      "Express",
-      "Tailwind CSS",
-    ],
+    technologies: ["React", "Tailwind CSS", "Tauri"],
 
-    image: null,
+    image: '/images/projects/nollkeys.png',
 
     liveUrl: "#",
     githubUrl: "#",

@@ -8,6 +8,7 @@ import {
   SiExpress,
   SiGit,
   SiGithub,
+  SiTauri,
 } from "react-icons/si";
 
 import { MdApi } from "react-icons/md";
@@ -64,7 +65,7 @@ const skills = [
     ],
   },
 
-  {
+    {
     number: "03",
     title: "Tools",
 
@@ -78,6 +79,11 @@ const skills = [
         name: "GitHub",
         icon: SiGithub,
         docs: "https://docs.github.com/",
+      },
+      {
+        name: "Tauri",
+        icon: SiTauri,
+        docs: "https://v2.tauri.app/",
       },
       {
         name: "REST APIs",
