@@ -15,27 +15,5 @@ export const projects = [
 
     liveUrl: "#",
     githubUrl: "#",
-  },
-
-  {
-    id: 2,
-
-    title: "Project Name",
-
-    type: "Website",
-
-    description:
-      "Keep this focused on the project itself instead of listing the technologies used to make it.",
-
-    technologies: [
-      "React",
-      "JavaScript",
-      "Tailwind CSS",
-    ],
-
-    image: null,
-
-    liveUrl: "#",
-    githubUrl: "#",
-  },
+  }
 ];
